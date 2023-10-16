@@ -1,10 +1,12 @@
+import React from "react";
+
 function Footer() {
-    return (
-      <footer>
-        <h4 className="todo-footer">Copyright © {new Date().getFullYear()}</h4>
-      </footer>
-    );
-  }
-  
-  export default Footer;
-  
+  const year = new Date().getFullYear();
+  return (
+    <footer>
+      <p>Copyright ⓒ {year}</p>
+    </footer>
+  );
+}
+
+export default Footer;

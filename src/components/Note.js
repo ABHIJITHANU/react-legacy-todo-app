@@ -1,8 +1,15 @@
+import React from "react";
+
 function Note(props) {
+  function handleClick() {
+    props.onDelete(props.id);
+  }
+
   return (
-    <div className="todo-note">
-      <h3>{props.title}</h3>
-      <p>{props.text}</p>
+    <div className="note">
+      <h1>{props.title}</h1>
+      <p>{props.content}</p>
+      <button onClick={handleClick}>DELETE</button>
     </div>
   );
 }

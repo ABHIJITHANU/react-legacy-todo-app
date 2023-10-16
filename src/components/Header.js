@@ -1,7 +1,9 @@
+import React from "react";
+
 function Header() {
   return (
     <header>
-      <h1 className="todo-header"># TODO-APP</h1>
+      <h1># TODO-APP</h1>
     </header>
   );
 }
